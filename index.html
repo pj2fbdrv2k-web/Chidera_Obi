@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chidera Obi | Psychology & Mindset Creator</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0B0F19',
+                            card: '#161F30',
+                            accent: '#F59E0B', // Warm Nigerian Gold
+                            psych: '#8B5CF6',  // Deep Psychology Purple
+                            teal: '#0D9488',   // Growth Teal
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0B0F19;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0B0F19;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1F2937;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #8B5CF6;
+        }
+    </style>
+</head>
+<body class="text-slate-100 min-h-screen flex flex-col justify-between overflow-x-hidden">
+
+    <!-- NAVIGATION -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-brand-dark/80 border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-brand-psych to-brand-accent flex items-center justify-center font-bold text-lg text-white shadow-lg shadow-brand-psych/20">
+                    CO
+                </div>
+                <div>
+                    <span class="font-extrabold text-xl tracking-tight bg-gradient-to-r from-white to-slate-400 bg-clip-text text-transparent">CHIDERA OBI</span>
+                    <span class="block text-[10px] text-brand-accent font-semibold uppercase tracking-widest -mt-1">Psychology & Mindset</span>
+                </div>
+            </div>
+            <nav class="hidden md:flex space-x-6 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-brand-accent transition-colors">My Story</a>
+                <a href="#pillars" class="hover:text-brand-accent transition-colors">Niche & Style</a>
+                <a href="#interactive" class="hover:text-brand-psych transition-colors">Mindset Tools</a>
+                <a href="#media-kit" class="hover:text-brand-accent transition-colors">Media Kit</a>
+            </nav>
+            <a href="#connect" class="bg-gradient-to-r from-brand-psych to-purple-700 hover:from-brand-accent hover:to-amber-600 text-white font-semibold text-xs px-5 py-2.5 rounded-full transition-all duration-300 shadow-md transform hover:-translate-y-0.5">
+                Let's Talk
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative py-20 md:py-28 overflow-hidden">
+        <div class="absolute top-1/4 left-1/10 w-72 h-72 bg-brand-psych/10 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute bottom-10 right-1/10 w-96 h-96 bg-brand-accent/5 rounded-full blur-[150px] pointer-events-none"></div>
+
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+            <span class="inline-flex items-center space-x-2 bg-slate-800/80 border border-slate-700 text-slate-300 text-xs font-semibold px-4 py-1.5 rounded-full mb-6">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span>Active Creator: Instigating Self-Mastery</span>
+            </span>
+            
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight mb-6">
+                Creating understanding,<br class="hidden md:block"/> 
+                <span class="bg-gradient-to-r from-brand-accent via-brand-psych to-violet-400 bg-clip-text text-transparent">
+                    one insight at a time.
+                </span>
+            </h1>
+            
+            <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-10 font-normal leading-relaxed">
+                Hi, I'm <strong class="text-slate-200">Chidera Obi</strong>. I break down complex human behavior and psychology into raw, actionable truths to help you rewire your mindset and navigate life.
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-12">
+                <a href="#interactive" class="w-full sm:w-auto bg-white text-brand-dark hover:bg-brand-accent hover:text-brand-dark font-bold px-8 py-3.5 rounded-xl transition-all duration-300 shadow-xl shadow-white/5">
+                    Explore Interactive Tools
+                </a>
+                <a href="#about" class="w-full sm:w-auto bg-slate-800/80 hover:bg-slate-700/80 text-white border border-slate-700 font-semibold px-8 py-3.5 rounded-xl transition-all duration-300">
+                    Read My Full Story
+                </a>
+            </div>
+
+            <div class="flex justify-center items-center space-x-6 text-slate-400">
+                <a href="https://instagram.com/_chidera_obi" target="_blank" class="hover:text-brand-accent transition-colors flex items-center space-x-1.5 group">
+                    <i data-lucide="instagram" class="w-5 h-5 group-hover:scale-110 transition-transform"></i>
+                    <span class="text-xs font-medium">@_chidera_obi</span>
+                </a>
+                <span class="h-4 w-[1px] bg-slate-800"></span>
+                <span class="hover:text-brand-psych transition-colors flex items-center space-x-1.5 group cursor-pointer">
+                    <i data-lucide="music-2" class="w-5 h-5 group-hover:scale-110 transition-transform"></i>
+                    <span class="text-xs font-medium">TikTok Creator</span>
+                </span>
+                <span class="h-4 w-[1px] bg-slate-800"></span>
+                <span class="flex items-center space-x-1.5 text-slate-500">
+                    <i data-lucide="users" class="w-5 h-5"></i>
+                    <span class="text-xs font-medium">Empowerment Community</span>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTENT PILLARS -->
+    <section id="pillars" class="py-16 bg-gradient-to-b from-brand-dark to-slate-900 border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-brand-accent font-bold text-xs uppercase tracking-widest mb-2">My Niche & Focus</h2>
+                <h3 class="text-2xl md:text-4xl font-extrabold">Real Psychology, No Fluff.</h3>
+                <p class="text-slate-400 mt-3">My content is built around making heavy, complex academic concepts relatable, useful, and actionable for daily growth.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-brand-card/60 border border-slate-800/80 p-8 rounded-2xl hover:border-brand-psych/50 transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-12 h-12 rounded-xl bg-brand-psych/10 flex items-center justify-center text-brand-psych mb-6 group-hover:bg-brand-psych group-hover:text-white transition-all">
+                        <i data-lucide="brain"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3 text-slate-100">Behavior & Influences</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Why do we act against our own interests? I dissect everyday social dynamics, subtle influence tactics, and the blindspots we overlook.
+                    </p>
+                </div>
+
+                <div class="bg-brand-card/60 border border-slate-800/80 p-8 rounded-2xl hover:border-brand-accent/50 transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-12 h-12 rounded-xl bg-brand-accent/10 flex items-center justify-center text-brand-accent mb-6 group-hover:bg-brand-accent group-hover:text-brand-dark transition-all">
+                        <i data-lucide="trending-up"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3 text-slate-100">Mindset Mastery</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Setting strong boundaries, understanding self-worth, and conquering limiting beliefs with clinical truth rather than sugarcoated toxic positivity.
+                    </p>
+                </div>
+
+                <div class="bg-brand-card/60 border border-slate-800/80 p-8 rounded-2xl hover:border-brand-teal/50 transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-12 h-12 rounded-xl bg-brand-teal/10 flex items-center justify-center text-brand-teal mb-6 group-hover:bg-brand-teal group-hover:text-white transition-all">
+                        <i data-lucide="heart"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3 text-slate-100">Emotional Intelligence</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Practical guides on self-awareness, reading human intentions, navigating relationships, and protecting your inner peace.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE SECTION -->
+    <section id="interactive" class="py-16 bg-slate-900 border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-brand-psych font-bold text-xs uppercase tracking-widest mb-2">Interactive Brand Experience</h2>
+                <h3 class="text-2xl md:text-4xl font-extrabold">Test Your Self-Awareness</h3>
+                <p class="text-slate-400 mt-3">Interact with tools inspired by the core psychology topics I discuss in my videos every day.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+                <div class="bg-brand-dark/60 border border-slate-800 p-8 rounded-3xl flex flex-col justify-between shadow-2xl relative overflow-hidden">
+                    <div class="absolute -top-10 -right-10 w-40 h-40 bg-brand-accent/5 rounded-full blur-2xl"></div>
+                    <div>
+                        <div class="flex items-center justify-between mb-8">
+                            <span class="text-xs font-semibold text-brand-accent tracking-widest uppercase bg-brand-accent/10 px-3 py-1 rounded-full">Daily Mindset Rewire</span>
+                            <i data-lucide="sparkles" class="text-brand-accent w-5 h-5"></i>
+                        </div>
+                        <div class="min-h-[160px] flex items-center">
+                            <p id="quote-box" class="text-xl md:text-2xl font-semibold italic text-slate-200 leading-relaxed">
+                                "Understand yourself first. Then influence your world positively."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mt-8 border-t border-slate-800 pt-6 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                        <span class="text-xs text-slate-500">— Chidera Obi, True Psychology Philosophy</span>
+                        <button onclick="generateMindsetQuote()" class="w-full sm:w-auto bg-brand-accent hover:bg-amber-400 text-brand-dark font-bold text-sm px-5 py-2.5 rounded-xl transition-all duration-200 flex items-center justify-center space-x-2">
+                            <i data-lucide="refresh-cw" class="w-4 h-4"></i>
+                            <span>Get Raw Truth</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-brand-dark/60 border border-slate-800 p-8 rounded-3xl flex flex-col justify-between shadow-2xl relative overflow-hidden">
+                    <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-brand-psych/5 rounded-full blur-2xl"></div>
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="text-xs font-semibold text-brand-psych tracking-widest uppercase bg-brand-psych/10 px-3 py-1 rounded-full">Social Dynamics Simulator</span>
+                            <span id="score-counter" class="text-xs font-medium text-slate-400 bg-slate-800 px-2.5 py-1 rounded-md">Scenario 1 of 3</span>
+                        </div>
+                        
+                        <div id="scenario-container">
+                            <h4 id="scenario-title" class="text-lg font-bold text-slate-200 mb-2">The Hidden Resistance</h4>
+                            <p id="scenario-desc" class="text-sm text-slate-400 mb-6">
+                                A colleague keeps agreeing with your ideas in group meetings, but subtle actions show they are undermining your projects. How do you handle this passive-aggressive dynamic?
+                            </p>
+                            
+                            <div class="space-y-3" id="options-box"></div>
+                        </div>
+
+                        <div id="completion-screen" class="hidden text-center py-6">
+                            <div class="w-16 h-16 bg-emerald-500/10 text-emerald-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i data-lucide="award" class="w-8 h-8"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-slate-200 mb-2">Insight Level Unlocked!</h4>
+                            <p id="result-text" class="text-sm text-slate-400 mb-6">You've successfully solved all behavioral scenarios with psychological maturity.</p>
+                            <button onclick="resetSimulator()" class="bg-brand-psych hover:bg-violet-600 text-white font-bold text-sm px-6 py-2.5 rounded-xl transition-all">
+                                Try Again
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FULL BIOGRAPHY & ORIGINS -->
+    <section id="about" class="py-20 bg-brand-dark relative overflow-hidden">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                
+                <div class="lg:col-span-5 lg:sticky lg:top-24 space-y-6">
+                    <span class="text-brand-accent font-bold text-xs uppercase tracking-widest">A-Z Creator Origins</span>
+                    <h3 class="text-3xl md:text-5xl font-extrabold leading-tight">Resilience in Every Word.</h3>
+                    
+                    <p class="text-slate-400 leading-relaxed text-sm md:text-base">
+                        "I didn't wake up one day deciding to become a content creator. My journey started from a deep curiosity about why people do what they do — the patterns in our thoughts, relationships, decisions, successes, and struggles."
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-4 pt-4">
+                        <div class="bg-brand-card border border-slate-800 p-4 rounded-xl text-center">
+                            <span class="block text-2xl font-black text-brand-accent">100%</span>
+                            <span class="text-xs text-slate-400 uppercase tracking-wider font-semibold">No Sugarcoating</span>
+                        </div>
+                        <div class="bg-brand-card border border-slate-800 p-4 rounded-xl text-center">
+                            <span class="block text-2xl font-black text-brand-psych">Nigerian</span>
+                            <span class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Drive & Culture</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-brand-card/40 border border-slate-800/80 rounded-xl p-5 space-y-3 text-xs">
+                        <h5 class="font-bold text-slate-200 uppercase tracking-widest text-[10px]">The Creator Profile</h5>
+                        <div class="flex justify-between border-b border-slate-800/50 pb-2">
+                            <span class="text-slate-500">Personality</span>
+                            <span class="text-slate-300 font-semibold">Straight-talking, Optimistic Realist</span>
+                        </div>
+                        <div class="flex justify-between border-b border-slate-800/50 pb-2">
+                            <span class="text-slate-500">Core Engine</span>
+                            <span class="text-slate-300 font-semibold">Faith, Family, Constant Refinement</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-500">Action Principle</span>
+                            <span class="text-slate-300 font-semibold">Discipline over changing algorithms</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 space-y-12">
+                    <h4 class="text-lg font-bold text-slate-300 border-b border-slate-800 pb-4 flex items-center space-x-2">
+                        <i data-lucide="history" class="w-5 h-5 text-brand-psych"></i>
+                        <span>My Roadmap & Experiences</span>
+                    </h4>
+
+                    <div class="relative pl-8 border-l border-brand-psych/30">
+                        <div class="absolute -left-[6px] top-1.5 w-3 h-3 rounded-full bg-brand-psych shadow-md shadow-brand-psych/50"></div>
+                        <span class="text-xs font-bold text-brand-psych uppercase tracking-widest block mb-1">Phase 1: The Observer Origins</span>
+                        <h5 class="text-lg font-bold text-slate-200 mb-2">Curiosity Meets Resilience</h5>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Growing up, I was always the analyst in the room, searching for the "why" behind decisions and actions. Resilience is woven deeply into my Nigerian heritage. Instead of treating psychology as a textbook theory, I saw it as a lifeline—a precise tool to clear toxic blocks and fuel real action.
+                        </p>
+                    </div>
+
+                    <div class="relative pl-8 border-l border-brand-accent/30">
+                        <div class="absolute -left-[6px] top-1.5 w-3 h-3 rounded-full bg-brand-accent shadow-md shadow-brand-accent/50"></div>
+                        <span class="text-xs font-bold text-brand-accent uppercase tracking-widest block mb-1">Phase 2: Taking the Leap</span>
+                        <h5 class="text-lg font-bold text-slate-200 mb-2">Consistency over Perfection</h5>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Starting out wasn't flawless. I had inconsistent uploads, battled comparison, and navigated the natural discomfort of public sharing. But discipline replaced fleeting motivation. Focusing on pure authenticity over curated facades helped me quickly connect with real people going through identical mental traps.
+                        </p>
+                    </div>
+
+                    <div class="relative pl-8 border-l border-brand-teal/30">
+                        <div class="absolute -left-[6px] top-1.5 w-3 h-3 rounded-full bg-brand-teal shadow-md shadow-brand-teal/50"></div>
+                        <span class="text-xs font-bold text-brand-teal uppercase tracking-widest block mb-1">Phase 3: The Present Era</span>
+                        <h5 class="text-lg font-bold text-slate-200 mb-2">Impact First</h5>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Today, I build substantial content series covering everyday behavior patterns, self-worth, and influence. The ultimate fuel isn't numeric vanity—it's reading direct messages from individuals who had active breakthroughs simply because of a 60-second video or carousel.
+                        </p>
+                    </div>
+
+                    <div class="relative pl-8">
+                        <div class="absolute -left-[6px] top-1.5 w-3 h-3 rounded-full bg-slate-700"></div>
+                        <span class="text-xs font-bold text-slate-500 uppercase tracking-widest block mb-1">Future Goals</span>
+                        <h5 class="text-lg font-bold text-slate-200 mb-2">Beyond the Algorithm</h5>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Expanding into masterclasses, deep-dive psychological handbooks, interactive community workshops, and collaborative initiatives. The target remains: crafting an enduring school of actionable mindset development.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROFESSIONAL MEDIA KIT / COLLAB SECTION -->
+    <section id="media-kit" class="py-16 bg-slate-900 border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-brand-accent font-bold text-xs uppercase tracking-widest mb-2">Partnerships</h2>
+                <h3 class="text-2xl md:text-4xl font-extrabold">Creator Media Kit</h3>
+                <p class="text-slate-400 mt-3">Let's build meaningful value together. Here is how I align with brands, companies, and platforms.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                <div class="bg-brand-card p-6 rounded-2xl border border-slate-800 text-center">
+                    <i data-lucide="target" class="w-8 h-8 text-brand-accent mx-auto mb-4"></i>
+                    <h5 class="font-bold text-slate-200 mb-1 text-sm uppercase">Key Audience</h5>
+                    <p class="text-xs text-slate-400">Students, professionals, & high-growth entrepreneurs</p>
+                </div>
+                <div class="bg-brand-card p-6 rounded-2xl border border-slate-800 text-center">
+                    <i data-lucide="user-check" class="w-8 h-8 text-brand-psych mx-auto mb-4"></i>
+                    <h5 class="font-bold text-slate-200 mb-1 text-sm uppercase">Demographic</h5>
+                    <p class="text-xs text-slate-400">Ages 18-35 hungry for personal mastery & boundaries</p>
+                </div>
+                <div class="bg-brand-card p-6 rounded-2xl border border-slate-800 text-center">
+                    <i data-lucide="video" class="w-8 h-8 text-brand-teal mx-auto mb-4"></i>
+                    <h5 class="font-bold text-slate-200 mb-1 text-sm uppercase">Formats</h5>
+                    <p class="text-xs text-slate-400">Punchy reels, deep carousels, text-threads, and stories</p>
+                </div>
+                <div class="bg-brand-card p-6 rounded-2xl border border-slate-800 text-center">
+                    <i data-lucide="zap" class="w-8 h-8 text-amber-500 mx-auto mb-4"></i>
+                    <h5 class="font-bold text-slate-200 mb-1 text-sm uppercase">Philosophy</h5>
+                    <p class="text-xs text-slate-400">Authenticity, actionable tactics over fluffy motivation</p>
+                </div>
+            </div>
+
+            <div class="bg-brand-dark/40 border border-slate-800 p-8 rounded-3xl">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-7 space-y-4">
+                        <h4 class="text-2xl font-bold text-slate-200">Why Brands Work With Me</h4>
+                        <p class="text-sm text-slate-400 leading-relaxed">
+                            I don't just put up sponsored posts; I build narrative integrations. Whether your brand revolves around mental well-being, financial mindset, productivity platforms, or personal organization, my community tunes in for raw, trusted guidance. My viewers don't scroll past—they stop, read, self-reflect, and act.
+                        </p>
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="bg-slate-800/80 text-slate-300 text-xs px-3 py-1.5 rounded-full font-medium">Educational Integrations</span>
+                            <span class="bg-slate-800/80 text-slate-300 text-xs px-3 py-1.5 rounded-full font-medium">Book & App Sponsorships</span>
+                            <span class="bg-slate-800/80 text-slate-300 text-xs px-3 py-1.5 rounded-full font-medium">Speaker Bookings</span>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-5 bg-brand-card border border-slate-800 p-6 rounded-2xl">
+                        <h5 class="font-bold text-slate-200 mb-4 text-center text-sm uppercase tracking-wider">Book a Campaign</h5>
+                        <form id="connect-form" class="space-y-3" onsubmit="handleFormSubmit(event)">
+                            <div>
+                                <label class="block text-[10px] text-slate-400 uppercase font-bold mb-1">Company / Name</label>
+                                <input type="text" id="form-name" required class="w-full bg-brand-dark border border-slate-800 rounded-lg px-3 py-2 text-xs focus:outline-none focus:border-brand-psych text-slate-200" placeholder="e.g. Headspace Inc."/>
+                            </div>
+                            <div>
+                                <label class="block text-[10px] text-slate-400 uppercase font-bold mb-1">Email</label>
+                                <input type="email" id="form-email" required class="w-full bg-brand-dark border border-slate-800 rounded-lg px-3 py-2 text-xs focus:outline-none focus:border-brand-psych text-slate-200" placeholder="your@brand.com"/>
+                            </div>
+                            <div>
+                                <label class="block text-[10px] text-slate-400 uppercase font-bold mb-1">Collaboration Proposal</label>
+                                <textarea id="form-message" required rows="3" class="w-full bg-brand-dark border border-slate-800 rounded-lg px-3 py-2 text-xs focus:outline-none focus:border-brand-psych text-slate-200" placeholder="Share your campaign vision..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-brand-psych hover:bg-violet-600 text-white font-bold text-xs py-2.5 rounded-lg transition-colors">
+                                Submit Collaboration Pitch
+                            </button>
+                        </form>
+                        <div id="form-success" class="hidden text-center py-4 space-y-2">
+                            <div class="w-10 h-10 bg-emerald-500/10 text-emerald-400 rounded-full flex items-center justify-center mx-auto">
+                                <i data-lucide="check" class="w-5 h-5"></i>
+                            </div>
+                            <h6 class="text-sm font-bold text-slate-200">Pitch Sent!</h6>
+                            <p class="text-xs text-slate-500">I'll look over this and respond within 24 hours.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER CONNECT -->
+    <footer id="connect" class="bg-brand-dark py-12 border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 text-center space-y-6">
+            <h3 class="text-xl md:text-2xl font-black tracking-wide">Let's stay connected.</h3>
+            
+            <p class="text-slate-400 text-sm max-w-md mx-auto">
+                Always down for genuine, analytical, and high-growth conversations. Drop a DM or hit follow to level up together.
+            </p>
+
+            <div class="flex justify-center space-x-6">
+                <a href="https://instagram.com/_chidera_obi" target="_blank" class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center hover:bg-brand-accent hover:text-brand-dark transition-all shadow-md">
+                    <i data-lucide="instagram" class="w-5 h-5"></i>
+                </a>
+                <span class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center hover:bg-brand-psych hover:text-white transition-all shadow-md cursor-pointer">
+                    <i data-lucide="music-2" class="w-5 h-5"></i>
+                </span>
+                <a href="#media-kit" class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center hover:bg-brand-teal hover:text-white transition-all shadow-md">
+                    <i data-lucide="mail" class="w-5 h-5"></i>
+                </a>
+            </div>
+
+            <div class="pt-8 border-t border-slate-800/50 text-xs text-slate-600 flex flex-col sm:flex-row justify-between items-center gap-4">
+                <p>© 2026 Chidera Obi. All rights reserved.</p>
+                <div class="flex space-x-4">
+                    <span class="hover:text-slate-400 cursor-pointer">Psychology</span>
+                    <span>•</span>
+                    <span class="hover:text-slate-400 cursor-pointer">Mindset Mastery</span>
+                    <span>•</span>
+                    <span class="hover:text-slate-400 cursor-pointer">Human Behavior</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE JAVASCRIPT LOGIC -->
+    <script>
+        lucide.createIcons();
+
+        const rawTruths = [
+            "Understand yourself first. Then influence your world positively.",
+            "Sugarcoated quotes don't build discipline. Seeing your limiting beliefs nakedly is where the shift begins.",
+            "You cannot set a boundary while actively attempting to manage how the other person feels about it.",
+            "We frequently act against our own interests because temporary comfort is an easier sell than long-term growth.",
+            "Emotional intelligence isn't avoiding emotional triggers; it's learning to read them like data.",
+            "A growth mindset is not believing you can do anything; it's being willing to look like a beginner as long as it takes.",
+            "Toxic dynamics survive when you continuously accept performance values in place of character values.",
+            "Comparison doesn't just steal joy; it steals the exact energy you need to build your own Chapter 1."
+        ];
+
+        let currentQuoteIndex = 0;
+        function generateMindsetQuote() {
+            const quoteBox = document.getElementById('quote-box');
+            let nextIndex;
+            do {
+                nextIndex = Math.floor(Math.random() * rawTruths.length);
+            } while (nextIndex === currentQuoteIndex);
+            
+            currentQuoteIndex = nextIndex;
+            quoteBox.style.opacity = 0;
+            setTimeout(() => {
+                quoteBox.innerText = `"${rawTruths[currentQuoteIndex]}"`;
+                quoteBox.style.opacity = 1;
+            }, 200);
+        }
+
+        const scenarios = [
+            {
+                title: "The Subtle Resistance",
+                desc: "A peer agrees with you during group brainstorms but subtly makes decisions that completely sideline your project goals outside the meeting. How do you respond?",
+                options: [
+                    { text: "Call them out publicly during the next group session to expose the passive aggression.", feedback: "Too confrontational. This creates defensiveness and shuts down future productivity.", correct: false },
+                    { text: "Confront them privately, outline the discrepancies in objective data, and focus on collaborative alignment.", feedback: "Excellent! Standard assertive boundaries backed by clinical clarity are hardest to play games with.", correct: true },
+                    { text: "Mirror their behavior back to them to show them how toxic it feels.", feedback: "This creates a negative feedback loop and lowers your own professional standards.", correct: false }
+                ]
+            },
+            {
+                title: "The Burnout Horizon",
+                desc: "You have a high-priority career goal but you are consistently ignoring physical fatigue, skipping sleep, and telling yourself 'rest is for the weak.' Realistically, what is happening here?",
+                options: [
+                    { text: "You are exhibiting peak motivation and dedication necessary for the success phase.", feedback: "Incorrect. You're mistaking self-deprecation for productivity. This leads to severe burnout.", correct: false },
+                    { text: "You're executing a high-agency period that should be sustained as long as physically possible.", feedback: "Sustaining burnout states reduces cognitive ability. This isn't sustainable mindset mastery.", correct: false },
+                    { text: "You're operating out of a scarcity mindset, thinking your worth is solely defined by uninterrupted struggle.", feedback: "Spot on! Realizing that sustainable pacing protects your peace as well as your productivity.", correct: true }
+                ]
+            },
+            {
+                title: "Handling Public Critique",
+                desc: "Someone comments a highly cynical, personally critical response on your latest content piece trying to derail your message. How does the optimistic realist respond?",
+                options: [
+                    { text: "Ignore the comment completely or delete it instantly to protect the comment section's aesthetic.", feedback: "While safe, it misses an opportunity to show high emotional regulation and clear authority.", correct: false },
+                    { text: "Respond with a calm, analytical follow-up that dissects the psychology of their projection, turning it into a educational moment.", feedback: "Brilliant! You reframe negative friction into authority-building educational content.", correct: true },
+                    { text: "Write back defensively explaining why they are completely incorrect and demanding respect.", feedback: "Defensiveness proves that the critique successfully bypassed your emotional boundaries.", correct: false }
+                ]
+            }
+        ];
+
+        let activeScenarioIndex = 0;
+
+        function loadScenario() {
+            if (activeScenarioIndex >= scenarios.length) {
+                document.getElementById('scenario-container').classList.add('hidden');
+                document.getElementById('completion-screen').classList.remove('hidden');
+                document.getElementById('score-counter').innerText = "Finished!";
+                return;
+            }
+
+            const current = scenarios[activeScenarioIndex];
+            document.getElementById('score-counter').innerText = `Scenario ${activeScenarioIndex + 1} of ${scenarios.length}`;
+            document.getElementById('scenario-title').innerText = current.title;
+            document.getElementById('scenario-desc').innerText = current.desc;
+
+            const optionsBox = document.getElementById('options-box');
+            optionsBox.innerHTML = '';
+
+            current.options.forEach((opt, idx) => {
+                const btn = document.createElement('button');
+                btn.className = "w-full text-left p-4 rounded-xl border border-slate-800 bg-brand-card/40 hover:bg-slate-800 hover:border-slate-700 text-xs transition-all duration-200 block text-slate-300 relative overflow-hidden group";
+                btn.innerHTML = `
+                    <div class="flex items-start space-x-3">
+                        <div class="w-5 h-5 rounded-full border border-slate-700 flex items-center justify-center text-[10px] font-bold shrink-0 mt-0.5 group-hover:bg-brand-psych group-hover:border-brand-psych group-hover:text-white">${String.fromCharCode(65 + idx)}</div>
+                        <span>${opt.text}</span>
+                    </div>
+                    <p class="feedback-msg hidden mt-3 text-[11px] text-brand-accent italic pl-8 border-l border-brand-accent"></p>
+                `;
+                btn.onclick = () => selectOption(btn, opt);
+                optionsBox.appendChild(btn);
+            });
+        }
+
+        function selectOption(clickedBtn, option) {
+            const btns = document.querySelectorAll('#options-box button');
+            btns.forEach(btn => btn.disabled = true);
+
+            const feedbackMsg = clickedBtn.querySelector('.feedback-msg');
+            feedbackMsg.innerText = option.feedback;
+            feedbackMsg.classList.remove('hidden');
+
+            if (option.correct) {
+                clickedBtn.classList.remove('border-slate-800');
+                clickedBtn.classList.add('border-emerald-500', 'bg-emerald-500/5');
+                const badge = clickedBtn.querySelector('.w-5');
+                badge.className = "w-5 h-5 rounded-full bg-emerald-500 text-white flex items-center justify-center text-[10px] font-bold shrink-0 mt-0.5";
+                badge.innerHTML = "✓";
+            } else {
+                clickedBtn.classList.remove('border-slate-800');
+                clickedBtn.classList.add('border-rose-500/40', 'bg-rose-500/5');
+                const badge = clickedBtn.querySelector('.w-5');
+                badge.className = "w-5 h-5 rounded-full bg-rose-500 text-white flex items-center justify-center text-[10px] font-bold shrink-0 mt-0.5";
+                badge.innerHTML = "✗";
+            }
+
+            setTimeout(() => {
+                activeScenarioIndex++;
+                loadScenario();
+            }, 3500);
+        }
+
+        function resetSimulator() {
+            activeScenarioIndex = 0;
+            document.getElementById('scenario-container').classList.remove('hidden');
+            document.getElementById('completion-screen').classList.add('hidden');
+            loadScenario();
+        }
+
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            document.getElementById('connect-form').classList.add('hidden');
+            document.getElementById('form-success').classList.remove('hidden');
+        }
+
+        window.onload = function() {
+            loadScenario();
+        }
+    </script>
+</body>
+</html>

@@ -10,9 +10,9 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
-// 🔒 Supabase Live Cloud Infrastructure Connection
-const SUPABASE_URL = 'https://sqhhojsmhhxkjnlbifuv.supabase.co';
-const SUPABASE_KEY = 'Sb_publishable_mdo5lM85onq5OFQDpI3ksg_bgJOoWR2'; 
+// 🔒 Secure Connection using Render Environment Variables
+const SUPABASE_URL = process.env.SUPABASE_URL;
+const SUPABASE_KEY = process.env.SUPABASE_ANON_KEY; 
 
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 console.log("⚡ SnapStake Cloud Database connected successfully.");
